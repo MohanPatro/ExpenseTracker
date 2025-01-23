@@ -1,0 +1,73 @@
+/* Main container for the email list */
+.email-list-container {
+    margin-top: 40px;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the email cards */
+.email-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styling for each email card */
+.email-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, max-height 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    max-height: 150px;
+}
+
+.email-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.email-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.email-card p {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.email-card .subject {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Expandable email card */
+.email-card.expanded {
+    max-height: 500px;
+    overflow: auto;
+}
+
+/* Link styling for "More" */
+.email-card .more-link {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.email-card .more-link:hover {
+    text-decoration: underline;
+}

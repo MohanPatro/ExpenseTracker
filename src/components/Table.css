@@ -1,0 +1,134 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu-button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    color: #4A7766;
+    background: #ECE7E2;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    gap: 10px;
+}
+
+.navbar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+
+    .nav-buttons {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-buttons.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        border-top: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual email card */
+.email-card {
+    background-color: #f8f8f8;
+    width: 80%;  /* Adjust width based on your requirement */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-card.expanded {
+    background-color: #ECE7E2;
+    transform: scale(1.02);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.train-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.station-info {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.card-status {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Expanded details */
+.expanded-details {
+    margin-top: 10px;
+    transition: max-height 0.3s ease-in-out;
+}

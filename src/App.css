@@ -1,0 +1,92 @@
+/* General App Styles */
+.app-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Login Section */
+  .login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Login Button */
+  .login-button {
+    background-color: #4285f4;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Email Cards */
+  .email-list-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .email-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .email-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .email-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .email-card h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .email-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+  .logout-button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .logout-button:hover {
+    background-color: #ff2f2f;
+  }
+  

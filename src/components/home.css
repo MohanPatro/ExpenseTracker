@@ -1,0 +1,24 @@
+body {
+    background-color: white;
+}
+
+.home-container {
+    text-align: center; 
+}
+
+.card-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 150px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
